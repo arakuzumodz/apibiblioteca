@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "API modelada para o trabalho 01 da matéria de Serviços WEB (03/05/2023)",
   "main": "server.js",
+  "start": "server.js",
   "scripts": {
+    "main": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Izolante",

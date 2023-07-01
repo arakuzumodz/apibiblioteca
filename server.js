@@ -4,7 +4,7 @@ const cors = require("cors");       //Middleware para o express
 const app = express();
 
 var corsOptions = {
-    origin: "http://localhost:8081"
+    origin: "0.0.0.0"
 
 };
 
@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 require("./app/rotas/livro.rotas.js")(app);
 
 //definição da porta e começando o listen das requests
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Server rodando na porta ${PORT}`);
 
